@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.db
+.env
+node_modules/
+.next/
+.idea/
+docs/PROJECT_DESCRIPTION.md
