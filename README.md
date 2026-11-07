@@ -105,5 +105,13 @@ Manual test cases: [docs/MANUAL_TEST_CASES.md](docs/MANUAL_TEST_CASES.md). Strat
 | [docs/BEST_PRACTICES.md](docs/BEST_PRACTICES.md) | Engineering practices applied + checklist |
 | [SECURITY.md](SECURITY.md) | Security model and known limitations |
 
+## Screenshot
+| Feature | Image |
+|---|---|
+| Dashboard | [Dashboard](docs/screenshots/dashboard.png) |
+| Tax Payer | [Tax Payer](docs/screenshots/tax-payer.png) |
+| Transactions | [Transactions](docs/screenshots/transactions.png) |
+| Audit Trail | [Audit Trail](docs/screenshots/audit-trail.png) |
+
 ## License
 MIT
