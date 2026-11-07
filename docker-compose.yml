@@ -20,6 +20,7 @@ services:
       DATABASE_URL: postgresql+psycopg2://taxwatch:taxwatch@db:5432/taxwatch
       SECRET_KEY: ${SECRET_KEY:?set SECRET_KEY (32+ random chars) in your shell or .env}
       CORS_ORIGINS: http://localhost:3000
+      SEED_DEMO_DATA: "true"
     depends_on:
       db: { condition: service_healthy }
     ports: ["8000:8000"]

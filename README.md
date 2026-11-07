@@ -64,12 +64,10 @@ PowerShell (Windows):
 ```powershell
 $env:SECRET_KEY = python -c "import secrets; print(secrets.token_urlsafe(48))"
 docker compose up --build
-docker compose exec backend python -m app.seed   # in a second terminal
 ```
 bash (macOS/Linux):
 ```bash
 SECRET_KEY=$(python -c "import secrets; print(secrets.token_urlsafe(48))") docker compose up --build
-docker compose exec backend python -m app.seed
 ```
 
 ## Testing
