@@ -3,6 +3,12 @@
 import os
 from dataclasses import dataclass, field
 
+from dotenv import load_dotenv
+
+# Load backend/.env (or a parent .env) if present. Real environment variables always win,
+# so CI, Docker and the test suite are unaffected.
+load_dotenv()
+
 DEFAULT_SECRET = "dev-secret-change-me"
 
 
