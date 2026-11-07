@@ -60,10 +60,17 @@ Run -> Edit Configurations -> Python: **Module name** `uvicorn`, **Parameters** 
 **Working directory** `backend`. For tests add a **pytest** configuration with working directory `backend`.
 
 ### Docker (full stack)
+PowerShell (Windows):
+```powershell
+$env:SECRET_KEY = python -c "import secrets; print(secrets.token_urlsafe(48))"
+docker compose up --build
+docker compose exec backend python -m app.seed   # in a second terminal
+```
+bash (macOS/Linux):
 ```bash
 SECRET_KEY=$(python -c "import secrets; print(secrets.token_urlsafe(48))") docker compose up --build
+docker compose exec backend python -m app.seed
 ```
-(Docker files were not executed in the authoring environment; see docs/BEST_PRACTICES.md.)
 
 ## Testing
 ```bash
