@@ -16,7 +16,7 @@ soft delete) and the user-facing flows, with fast feedback on every commit.
 | Static analysis | CI | ruff, next lint | - | Style, bugs, import order |
 
 ## How to run
-See README "Testing". Markers: `unit`, `api`, `regression` (registered in `pyproject.toml`, `--strict-markers`).
+See README "Testing". Markers: `unit`, `api`, `regression` (registered in `pytest.ini`, `--strict-markers`).
 
 ## Quality gates (CI)
 1. `ruff check` and `ruff format --check` clean.

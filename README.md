@@ -118,5 +118,23 @@ Manual test cases: [docs/MANUAL_TEST_CASES.md](docs/MANUAL_TEST_CASES.md). Strat
 | Transactions | [Transactions](docs/screenshots/transactions.png) |
 | Audit Trail | [Audit Trail](docs/screenshots/audit-trail.png) |
 
+## Live demo
+
+| | |
+|---|---|
+| **App** | https://taxwatch-g58j.vercel.app |
+| **API docs (Swagger)** | https://taxwatch-ej5v.vercel.app/docs |
+| **Demo video** | <VIDEO_URL> |
+
+**Demo accounts**
+
+| Username | Role | Password |
+|---|---|---|
+| `officer` | Registers taxpayers and records transactions | `Demo#12345` |
+| `auditor` | Reviews flagged transactions, reads the audit trail | `Demo#12345` |
+
+This is a shared public demo hosted on Vercel with Supabase PostgreSQL. Please do not enter real data;
+data may be reset at any time. The first request after an idle period can take a few seconds (cold start).
+
 ## License
 MIT
